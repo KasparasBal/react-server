@@ -1,5 +1,5 @@
 const express = require("express");
-
+const coffeeRoutes = require("./Routes/coffee");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
@@ -12,6 +12,11 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+
+app.use((req, res, next) => {
+  console.log(req.path, req.method);
+  next();
+});
 
 const port = process.env.PORT || 3002;
 
@@ -26,3 +31,7 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
+
+//routes
+
+app.use("/api/coffee", coffeeRoutes);
