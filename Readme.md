@@ -19,3 +19,5 @@ Todėl nedabaigiau JWT ir autentikaciją kinda not existant.
 8. Enjoy the view.
 
 :)
+
+sorry, kad taip per du linkus , had ALOT of technical issues, perdariau kelis kart, nes nemoku git ir messed up su commitais... :)
