@@ -16,3 +16,5 @@ Todėl nedabaigiau JWT ir autentikaciją kinda not existant.
 7. Login 
 
 8. Enjoy the view.
+
+:)

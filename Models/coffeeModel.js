@@ -21,6 +21,7 @@ const coffeeSchema = new Schema(
       required: true,
     },
   },
+
   { timestamps: true }
 );
 

@@ -1,6 +1,7 @@
 const User = require("../Models/userModel");
 const mongoose = require("mongoose");
 const express = require("express");
+
 const jwt = require("jsonwebtoken");
 
 // Register New User
