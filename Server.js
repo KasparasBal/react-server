@@ -1,8 +1,11 @@
 const express = require("express");
 const coffeeRoutes = require("./Routes/coffee");
+const usersRoutes = require("./Routes/user");
+
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
+
 require("dotenv").config();
 
 //middleware
@@ -18,7 +21,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 4000;
 
 //connect to DB
 mongoose
@@ -35,3 +38,4 @@ mongoose
 //routes
 
 app.use("/api/coffee", coffeeRoutes);
+app.use("/api/users", usersRoutes);
